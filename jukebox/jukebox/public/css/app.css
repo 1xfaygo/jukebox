@@ -1,0 +1,8 @@
+li {
+    list-style-type: none; 
+    padding-bottom: 10px;  
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@import url("app.css");
