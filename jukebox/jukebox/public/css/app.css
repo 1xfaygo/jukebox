@@ -1,8 +1,20 @@
 li {
-    list-style-type: none; 
-    padding-bottom: 10px;  
-    display: inline-block;
-    margin-right: 10px;
+    padding-bottom: auto;  
+    display: inline-flex;
+    margin: auto;
+}
+body{
+    background-color: #6f9870 ;
+    max-width: 600px;
+    margin: auto;
 }
 
-@import url("app.css");
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    border-radius:  7px;
+    padding-bottom: 1px;
+    background-color: #6f9179; 
+}

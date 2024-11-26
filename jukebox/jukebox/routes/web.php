@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArtistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,17 @@ Route::get('albums', function(){
 Route::get('songs', function(){
     return view('songs');
 });
+
+
+Route::get('playlist',function(){
+    return view('playlist');
+});
+
+Route::get('genre',function(){
+    return view('genres');
+});
+
+
+Route::get('/', [ArtistController::class, 'index']);
+
+Route::get('/artists', [ArtistController::class, 'list']);

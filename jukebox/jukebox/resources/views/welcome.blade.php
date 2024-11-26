@@ -2,5 +2,5 @@
 
     
 @section('body')
-    <p>welcome</p>
+<h1>Welcome to the Jukebox!</h1>
 @endsection

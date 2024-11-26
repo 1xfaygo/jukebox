@@ -1,2 +1,2 @@
-@extends(layouts.blueprint)
+@extends("layouts.blueprint")
 
