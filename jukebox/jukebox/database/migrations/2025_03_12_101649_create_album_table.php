@@ -6,21 +6,21 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /** 
+    /**
      * Run the migrations.
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('artists', function (Blueprint $table) {
+        Schema::create('albums', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('genre')->nullable();
+            $table->foreignId('artist_id')->default();
+            $table->date('release_date')->nullable();
             $table->timestamps();
         });
     }
-
 
     /**
      * Reverse the migrations.
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('artists');
+        Schema::dropIfExists('albums');
     }
 };

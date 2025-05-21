@@ -13,20 +13,20 @@
         <li><button><a href="/albums">Albums</a></button></li>
         <li><button><a href="/songs">Songs</a></button></li>
         <li><button><a href="/playlist">Playlists</a></button></li>
-        <li><button><a href="/genre">Genres</a></button></li>
+        <li><button><a href="/genres">Genres</a></button></li>
     </nav>
 
 @yield('body')
 
 @yield('goback')
 
-
+<div class="footer">
 <footer> 
     
     <p>
-        &copy; Yassine -{{ date('Y') }} 
+        
     </p>
-
+</div>
 </footer>
 </body>
 </html>

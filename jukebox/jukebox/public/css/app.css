@@ -1,8 +1,4 @@
-li {
-    padding-bottom: auto;  
-    display: inline-flex;
-    margin: auto;
-}
+
 body{
     background-color: #6f9870 ;
     max-width: 600px;
@@ -13,8 +9,43 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button{
-    border-radius:  7px;
-    padding-bottom: 1px;
-    background-color: #6f9179; 
+/* Button styles */
+button {
+    border-radius: 7px;
+    padding: 10px 20px; /* Larger padding for better appearance */
+    background-color: #6f9179;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #5a7c64; /* Slightly darker shade for hover */
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* List styles */
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 20px auto; /* Center the list vertically */
+    display: inline-flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* List item styling */
+li {
+    padding-bottom: auto;
+    display: inline-flex;
+    margin: 10px; /* Space between buttons */
 }

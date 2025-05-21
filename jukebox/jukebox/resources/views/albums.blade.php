@@ -1,14 +1,24 @@
-@extends("layouts.blueprint")
+@extends('layouts.blueprint')
 
-
-
+@section('head')
+    <link rel="stylesheet" href="{{ asset('css/album.css') }}">
+@endsection
 
 @section('body')
-<p>Albums</p>
+
+
+<div class="container">
+    <h1>Albums</h1>
+    <div class="album-grid">
+        @foreach ($albums as $album)
+            <div class="album-card">
+                <h2>{{ $album->name }}</h2>
+                <p>By: {{ $album->artist->name }}</p>
+                <p>Released: {{ $album->release_date ? $album->release_date->format('Y-m-d') : 'N/A' }}</p>
+            </div>
+        @endforeach
+    </div>
+</div>
+
+<a href="/" class="back-home">Back to Home</a>
 @endsection
-
-@section('goback')
-<a href="/">Go back</a>
-@endsection
-
-
